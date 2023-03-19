@@ -19,7 +19,7 @@ const About = () => {
   return (
     <>
       <Reveal>
-        <div className="fake-big">About</div>
+        <div className="fake-big2">About</div>
       </Reveal>
       <div className="section-about-wrapper section__padding">
         <article className="section-about-description">

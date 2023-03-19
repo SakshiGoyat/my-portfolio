@@ -4,7 +4,7 @@ import { TbWorld } from "react-icons/tb";
 // images from the asset folder in the image file
 import {
   Home_page_blog_website,
-  todo_home,
+  todolist,
   secrete_home,
   drum_kit,
   simon_page,
@@ -58,7 +58,7 @@ export const projects = [
       icon: <TbWorld />,
       url: "https://gericht-restaurant-website.netlify.app/",
     },
-    imgUrl: todo_home,
+    imgUrl: todolist,
   },
   {
     id: 4,
