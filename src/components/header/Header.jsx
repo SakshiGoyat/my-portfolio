@@ -39,7 +39,7 @@ const Header = ({ url }) => {
       {/* <canvas id="canvas" /> */}
       <div className="container">
         <Reveal>
-          <div className="fake-big">Home</div>
+          <div className="fake-big1">Home</div>
         </Reveal>
         <section className="section-1 header__container section__padding">
           <main className="intro-page">
