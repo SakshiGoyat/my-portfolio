@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <>
       <section className="section-contact section__padding">
-        <div className="fake-big">@</div>
+        <div className="fake-big5">Contact</div>
         <div className="totalPage">
           <div>
             <div>
@@ -102,7 +102,7 @@ const Contact = () => {
                 </div>
               </Fade>
               <Fade bottom>
-                <button className="contact-button submit-button" type="submit">
+                <button className="contact-button1 submit-button1" type="submit">
                   <div>
                     <span className="bg switch__bg"></span>
                     <span className="base switch__border-color"></span>

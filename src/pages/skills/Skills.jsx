@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <>
       <Reveal>
-        <div className="fake-big">Skills</div>
+        <div className="fake-big3">Skills</div>
       </Reveal>
       <div className="section-skills-wrapper section__padding">
         <article className="section-skills-description">

@@ -1,26 +1,26 @@
 .section-about {
   position: relative;
+  margin-top: 0rem;
 }
 .section-about-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-
+  height: 100vh;
 }
 .section-about-description {
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 6rem;
-  margin-bottom: 2em;
-  height: 100%;
-
+  // margin-top: 6rem;
+  // margin-bottom: 2em;
+  // height: 100%;
 }
 .section-about-description h1 {
   display: block;
   font-size: 4rem;
-  top: 0rem;
-  position: absolute;
-  top: 6rem;
+  position: relative;
+  margin-top: 0rem;
+  padding-bottom: 2rem;
   z-index: 100;
   .text-animate-hover {
     &:hover {
@@ -32,7 +32,6 @@
   font-size: 1.3rem;
 }
 
-
 .contact-button {
   display: block;
   width: 100%;
@@ -40,7 +39,7 @@
   max-width: 200px;
   line-height: 50px;
   position: relative;
-  margin: 50px 0;
+  margin-top: -10rem;
   animation: fadeInAnimation 1s 1.8s backwards;
   white-space: nowrap;
 }
@@ -107,17 +106,18 @@
 
 .fake-big2 {
   display: block;
-  font-size: 2.5rem;
+  font-size: 6rem;
   font-weight: bolder;
   position: absolute;
-  top: -20px;
-  left: 10%;
+  top: 5rem;
+  left: 50%;
+  padding-top: 0rem;
   color: rgba(65, 65, 65, 0.068);
   text-shadow: 2px 2px 4px 0 rgba(27, 26, 26, 0.5);
   user-select: none;
-  display: none;
 }
-.about__me{
+
+.about__me {
   width: 25rem;
   height: 25rem;
   border-radius: 2rem;
@@ -125,22 +125,24 @@
   position: absolute;
   left: 80rem;
   top: 10rem;
-
 }
 
-.about__me-image{
+.about__me-image {
   border-radius: 2rem;
   overflow: hidden;
   overflow: hidden;
   object-fit: fill;
   transform: rotate(0deg);
-  // bottom: 4rem;
   position: absolute;
   z-index: 100;
 }
 
-.about__me-image :hover{
-  transform: rotate(10deg)
+.about-image {
+  height: 25rem;
+  width: 25rem;
+}
+.about__me-image :hover {
+  transform: rotate(10deg);
 }
 
 @media screen and (max-width: 1900px) {
@@ -148,13 +150,12 @@
     grid-template-columns: 6fr 1fr;
     gap: 2rem;
   }
-  .section-about-description h1{
+  .section-about-description h1 {
     font-size: 6rem;
   }
-  .section-about-description p{
+  .section-about-description p {
     font-size: 2rem;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -162,18 +163,18 @@
     margin-top: 46rem;
     padding-top: 0;
   }
-  .section-about h1{
+  .section-about h1 {
     font-size: 14rem;
     top: 6rem;
   }
-    .section-about-description p{
+  .section-about-description p {
     font-size: 1.6rem;
     top: -1rem;
   }
   .section-about-description {
     grid-template-columns: 1fr 1fr;
   }
-  .about__me{
+  .about__me {
     top: 16rem;
     left: 2rem;
     height: 5rem;
@@ -200,27 +201,107 @@
   .section-about-description {
     grid-template-columns: 1fr;
   }
-    .section-about-description p{
+  .section-about-description p {
     font-size: 1rem;
   }
-    .about__me{
+  .about__me {
     height: 5rem;
     width: 10rem;
   }
 }
 
+@media screen and (max-width: 425px) {
+  .section-about {
+    position: relative;
+    margin-top: -5rem;
 
-@media screen and (max-width: 450px) {
+      .contact-button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    max-width: 200px;
+    line-height: 50px;
+    position: absolute;
+    top: 59rem;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+  }
+  }
+
+  .section-about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 6rem;
+  height: 100vh;
+}
+.section-about-description {
+  padding-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 0rem;
+  // margin-bottom: 2em;
+  height: 100%;
+}
+  .section-about-description h1 {
+    font-size: 2rem;
+    margin-top: 0rem;
+    padding-top: 0;
+    margin-bottom: 22rem;
+  }
+
   .section-about-description {
     grid-template-columns: 1fr;
   }
-  .section-about-description h1 {
-    font-size: 2rem;
-  }
-  .about-description-skills {
-    grid-template-columns: repeat(1, 1fr);
-  }
+
   .section-about-description p {
-    font-size: 0.975rem;
+    font-size: 1rem;
+  }
+  .about__me {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 2rem;
+    background-color: var(--hover-color);
+    position: absolute;
+    left: 2rem;
+    top: 9rem;
+  }
+  .about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    overflow: hidden;
+    object-fit: fill;
+    transform: rotate(0deg);
+    position: absolute;
+    z-index: 100;
+  }
+
+  .about-image {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .fake-big2 {
+    display: block;
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    padding-top: 0rem;
+    color: rgba(65, 65, 65, 0.068);
+    text-shadow: 2px 2px 4px 0 rgba(27, 26, 26, 0.5);
+    user-select: none;
+  }
+
+  .contact-button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    max-width: 200px;
+    line-height: 50px;
+    position: absolute;
+    top: 63rem;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
   }
 }

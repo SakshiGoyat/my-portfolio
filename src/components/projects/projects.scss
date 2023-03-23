@@ -32,7 +32,7 @@
   transition: all 250ms linear;
   p {
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #fff;
   }
 }
@@ -53,16 +53,18 @@
 }
 
 .section__projects-contents .desc {
-  width: 200px;
+  width: 50%;
   margin: auto;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
-
 .section__projects-stack {
   h2 {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
+  }
+  span{
+    font-size: 1.5rem;
   }
   color: #fff;
   margin-top: 70px;
@@ -151,8 +153,8 @@
   }
   .section__projects-contents {
     p {
-      margin-top: 20px;
-      font-size: 0.875rem;
+      margin-top: 5px;
+      font-size: 1rem;
     }
   }
   .section__projects-icon {
@@ -163,9 +165,27 @@
     font-size: 15px;
     margin-bottom: 3px;
   }
+  .section__projects-contents .desc {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
   .section__projects-stack {
     color: #fff;
     margin-top: 40px;
+    font-size: 0.5rem;
     bottom: 10px;
   }
+   .section__projects-stack {
+    h2 {
+      margin-bottom: 0.1rem;
+      font-size: 0.75rem;
+    }
+    span{
+      font-size: 0.75rem;
+    }
+    margin-top: 5px;
+  }
+
 }

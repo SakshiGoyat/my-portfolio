@@ -2,28 +2,29 @@ import Blast from "../BlastAnimation/Blast";
 import "./header.scss";
 import Fade from "react-reveal/Fade";
 import Sakshi from "../../assets/images/Sakshi_s_Resume.pdf";
+import { TypeAnimation } from "react-type-animation";
 
 import Reveal from "react-reveal/Reveal";
 import React, { useState, useEffect } from "react";
 import { MdArrowDropDown } from "react-icons/md";
 // import useScript from "./useScript";
 
-const nameArray = ["S", "a", "k", "s", "h", "i"];
-const jobArray = [
-  "W",
-  "e",
-  "b",
-  " ",
-  "D",
-  "e",
-  "v",
-  "e",
-  "l",
-  "o",
-  "p",
-  "e",
-  "r",
-];
+const nameArray = ["S", "a", "k", "s", "h", "i", " ", "G", "o", "y", "a", "t"];
+// const jobArray = [
+//   "W",
+//   "e",
+//   "b",
+//   " ",
+//   "D",
+//   "e",
+//   "v",
+//   "e",
+//   "l",
+//   "o",
+//   "p",
+//   "e",
+//   "r",
+// ];
 
 const Header = ({ url }) => {
   // useScript(url);
@@ -60,12 +61,12 @@ const Header = ({ url }) => {
               <br />
               <Blast
                 letterClass={letterClass}
-                arrayStr={jobArray}
+                arrayStr={["A", "n", "d"]}
                 indexLetter={22}
               />
             </h2>
 
-            <p className="text-desc">
+            {/* <p className="text-desc">
               <Blast
                 letterClass={letterClass}
                 arrayStr={[
@@ -97,9 +98,38 @@ const Header = ({ url }) => {
                   "E",
                   "R",
                 ]}
-              />{" "}
-              {/* WEB DEVELOPER, UI/UX DESIGNER */}
-            </p>
+              />{" "} */}
+            {/* WEB DEVELOPER, UI/UX DESIGNER */}
+            {/* </p> */}
+            <h2 className="text-desc">
+              <Blast
+                letterClass={letterClass}
+                arrayStr={["I", "'", "m", " ", "a", " "]}
+                indexLetter={15}
+              />
+              <TypeAnimation
+                className="type-writer"
+                sequence={[
+                  1000,
+                  "Web Developer", // Types 'One'
+                  1000, // Waits 1s
+                  "UI/UX Designer", // Deletes 'One' and types 'Two'
+                  1000, // Waits 2s
+                  "Graphic Designer",
+                  1000,
+                  "Programmer",
+                  1000,
+                  "Student",
+                  1000,
+                  () => {
+                    console.log("Sequence completed"); // Place optional callbacks anywhere in the array
+                  },
+                ]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+              />
+            </h2>
             <Fade left>
               <a
                 style={{ marginTop: "2rem" }}

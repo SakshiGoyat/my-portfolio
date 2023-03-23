@@ -157,15 +157,15 @@
 
   .fake-big1 {
   display: block;
-  font-size: 2.5rem;
+  font-size: 6rem;
   font-weight: bolder;
   position: absolute;
-  top: -20px;
-  left: 10%;
+  top: 5rem;
+  left: 55rem;
+  padding: 4rem;
   color: rgba(65, 65, 65, 0.068);
   text-shadow: 2px 2px 4px 0 rgba(27, 26, 26, 0.5);
   user-select: none;
-  display: none;
 }
 .section-1 {
   min-height: 120vh;
@@ -200,12 +200,19 @@
 }
 
 .section-1 .text-desc {
-  font-size: 2em;
+  font-size: 4.5em;
   position: absolute;
-  top: 35rem;
+  top: 32rem;
   letter-spacing: 2px;
   z-index: 100;
-  animation: fadeIn 1s 1.4s backwards;
+  // animation: fadeIn 1s 1.4s backwards;
+  span{
+    font-size: "1px";
+    display: "inline-block";
+  }
+  .type-writer{
+    color: var(--color-tem); 
+  }
 }
 
 .scroll__wrapper {
@@ -296,31 +303,31 @@
 
 // large screens
 
-@media screen and (max-width: 1024px) {
-  .container{
-    margin: 4rem 4rem -12rem 0;
-  }
-  .intro-page h1 {
-    font-size: 5.5rem;
-    line-height: 5rem;
-    letter-spacing: -2px;
-  }
-  .intro-page h2{
-    font-size: 4rem;
-  }
-  .intro-page h1 .home-logo {
-    width: 60px;
-  }
-  .section-1 .text-desc {
-    font-size: 1.3rem;
-  }
+// @media screen and (max-width: 1024px) {
+//   .container{
+//     margin: 4rem 4rem -12rem 0;
+//   }
+//   .intro-page h1 {
+//     font-size: 5.5rem;
+//     line-height: 5rem;
+//     letter-spacing: -2px;
+//   }
+//   .intro-page h2{
+//     font-size: 4rem;
+//   }
+//   .intro-page h1 .home-logo {
+//     width: 60px;
+//   }
+//   .section-1 .text-desc {
+//     font-size: 1.3rem;
+//   }
 
-  .contact-button {
-    max-width: 220px;
-    height: 50px;
-    line-height: 50px;
-  }
-}
+//   .contact-button {
+//     max-width: 220px;
+//     height: 50px;
+//     line-height: 50px;
+//   }
+// }
 
 // tablet screens || medium screens
 @media screen and (max-width: 768px) {
@@ -361,12 +368,29 @@
     left: 20vw;
   }
 }
-@media screen and (max-width: 450px) {
-      .container{
+@media screen and (max-width: 425px) {
+  .container{
     margin: 0 4rem 0rem 0;
+
+  .fake-big1 {
+  display: block;
+  font-size: 4rem;
+  font-weight: bolder;
+  position: absolute;
+  top: 0rem;
+  left: 5rem;
+  padding: 4rem;
+  color: rgba(65, 65, 65, 0.068);
+  text-shadow: 2px 2px 4px 0 rgba(27, 26, 26, 0.5);
+  user-select: none;
+}
   }
   .section-1 {
     min-height: 100vh;
+  }
+
+  .section-1{
+    margin-top: 6rem;
   }
   .intro-page h1 {
     font-size: 3rem;
@@ -388,5 +412,21 @@
     .download-button{
     top: 28rem;
   }
+  .section-1 .text-desc {
+  font-size: 2em;
+  position: absolute;
+  top: 22rem;
+  letter-spacing: 2px;
+  z-index: 100;
+  width: 120%;
+  // animation: fadeIn 1s 1.4s backwards;
+  span{
+    font-size: "1px";
+    display: "inline-block";
+  }
+  .type-writer{
+    color: var(--color-tem); 
+  }
+}
 }
 

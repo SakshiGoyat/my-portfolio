@@ -17,7 +17,7 @@ const ProjectPage = () => {
 
   return (
     <section className="section__projects section__padding">
-      <div className="fake-big">Projects</div>
+      <div className="fake-big4">Projects</div>
       <h2 aria-label="My Projects" className="section__projects-title">
         <Blast
           letterClass={letterClass}
@@ -25,7 +25,7 @@ const ProjectPage = () => {
           indexLetter={12}
         />
       </h2>
-      <div className="section__projects-description">
+      <div className="section__projects-description1">
         <Fade bottom>
           <p>
             These are the projects that I have worked upon in the past few
@@ -34,7 +34,7 @@ const ProjectPage = () => {
         </Fade>
       </div>
 
-      <div className="section__projects-description">
+      <div className="section__projects-description2">
         {projects.map((project, index) => {
           return <Project {...project} key={index} />;
         })}
